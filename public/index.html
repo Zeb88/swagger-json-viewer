@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAPI JSON Spec Visualiser</title>
+  <meta name="description" content="Upload an OpenAPI json spec file to view it in Swagger UI">
+  <meta name="keywords" content="OpenAPI, Swagger, API documentation">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .result {
+      margin-top: 20px;
+      color: green;
+    }
+    @media (min-width: 600px) {
+      .container {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>OpenAPI JSON Spec Visualiser</h2>
+  <p>Upload an OpenAPI spec file to view it in Swagger UI.</p>
+  <p><i>Note: All spec files will be automatically cleaned one day after upload.</i></p>
+  <br/>
+  <form id="uploadForm">
+    <input type="file" id="openapiFile" name="openapi" accept=".json" required />
+    <button type="submit">Upload</button>
+  </form>
+  <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

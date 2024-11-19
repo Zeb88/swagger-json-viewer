@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+
+  node-application:
+    build: .
+    container_name: open-api-json-visualiser
+    ports:
+      - "9000:9000"
+    restart: always

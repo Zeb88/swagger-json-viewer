@@ -1,0 +1,20 @@
+{
+  "name": "swagger-json-viewer",
+  "version": "1.0.0",
+  "description": "A web-based viewer for Open API specification files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": ["swagger", "openapi", "api", "documentation", "express"],
+  "author": "https://github.com/Zeb88",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.0.2"
+  }
+}
